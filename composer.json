@@ -1,0 +1,24 @@
+{
+    "name": "emersonbroga/social-counters",
+    "description": "A Simple PHP class to convert numbers to social media counters like from 1000 to 1K, 1000000 to 1M.",
+    "keywords": ["numbers", "counters", "social", "media"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emerson Carvalho",
+            "email": "emerson.broga@gmail.com"
+        }
+    ],
+    "type": "package",
+    "require": {
+		"php": ">=5.4"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "EmersonBroga\\": "src/"
+        }
+    }
+}
