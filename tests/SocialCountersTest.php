@@ -39,6 +39,7 @@ class SocialCountersTest extends PHPUnit_Framework_TestCase {
     
     $this->assertEquals($sc->format(1000000), '1M');
     $this->assertEquals($sc->format(1000002), '1M+');
+    $this->assertEquals($sc->format(1234567), '1.2M+');
     $this->assertEquals($sc->format(7000000), '7M');
     $this->assertEquals($sc->format(7500000), '7.5M');
     $this->assertEquals($sc->format(7500001), '7.5M+');
@@ -84,8 +85,24 @@ class SocialCountersTest extends PHPUnit_Framework_TestCase {
     
     $this->assertEquals($sc->format(1000000000000000), '1000T');
     $this->assertEquals($sc->format(1000000000000001), '1000T+');
-    
-     
+  
+  }
+
+  public function testCustomSufixes() {
+    $sc = new SocialCounters();
+
+    $sc->thousandSuffix = 'G';
+    $this->assertEquals($sc->format(1234), '1.2G+');
+
+    $sc->millionSuffix = 'Z';
+    $this->assertEquals($sc->format(1200001), '1.2Z+');
+
+    $sc->billionSuffix = 'U';
+    $this->assertEquals($sc->format(1700000000), '1.7U');
+
+    $sc->trillionSuffix = 'L';
+    $this->assertEquals($sc->format(1000000000000001), '1000L+');
+
   }
     
 }

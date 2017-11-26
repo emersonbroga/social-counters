@@ -37,7 +37,7 @@ require 'vendor/autoload.php';
 use  \EmersonBroga\SocialCounters;
 
 $socialCounters = new SocialCounters();
-$socialCounters->thousandSuffix = 'G'
+$socialCounters->thousandSuffix = 'G';
 echo $socialCounters->format(1234); // 1.2G+
 
 ```
