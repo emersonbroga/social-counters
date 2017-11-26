@@ -1,6 +1,6 @@
 {
     "name": "emersonbroga/social-counters",
-    "description": "A Simple PHP class to convert numbers to social media counters like from 1000 to 1K, 1000000 to 1M.",
+    "description": "A Simple PHP class to convert numbers to social media counters from 1000 to 1K, 1000001 to 1M+.",
     "keywords": ["numbers", "counters", "social", "media"],
     "license": "MIT",
     "authors": [
