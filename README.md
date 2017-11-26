@@ -9,7 +9,7 @@ Installation
 ------------
 
 ```
-composer require emersonbroga/social-counters
+composer require emersonbroga/social-counters:dev-master
 ```
 
 Then:
